@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-hello-docker
+spec:
+  parallelism: 2
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - image: ghcr.io/asleshapokhrel/fast-api-app:latest
+          name: pod-hello-docker

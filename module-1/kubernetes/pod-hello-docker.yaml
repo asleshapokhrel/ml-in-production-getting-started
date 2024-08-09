@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-hello-docker
+spec:
+  containers:
+    - image: ghcr.io/asleshapokhrel/fast-api-app:latest
+      name: pod-hello-docker
