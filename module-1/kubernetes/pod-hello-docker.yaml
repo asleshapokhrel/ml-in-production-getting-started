@@ -4,5 +4,5 @@ metadata:
   name: pod-hello-docker
 spec:
   containers:
-    - image: ghcr.io/asleshapokhrel/fast-api-app:latest
+    - image: ghcr.io/asleshapokhrel/fast-api:latest
       name: pod-hello-docker

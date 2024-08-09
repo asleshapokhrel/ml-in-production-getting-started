@@ -8,5 +8,5 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-        - image: ghcr.io/asleshapokhrel/fast-api-app:latest
+        - image: ghcr.io/asleshapokhrel/fast-api:latest
           name: pod-hello-docker

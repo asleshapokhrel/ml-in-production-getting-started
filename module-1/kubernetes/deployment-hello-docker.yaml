@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
         - name: test-hello-docker
-          image: ghcr.io/asleshapokhrel/fast-api-app:latest
-
-
+          image: ghcr.io/asleshapokhrel/fast-api:latest
+--- 
 apiVersion: v1
 kind: Service
 metadata:
