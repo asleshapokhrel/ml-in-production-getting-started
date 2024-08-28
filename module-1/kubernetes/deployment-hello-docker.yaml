@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-hello-docker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deployment-hello-docker
+  template:
+    metadata:
+      labels:
+        app: deployment-hello-docker
+    spec:
+      containers:
+        - name: test-hello-docker
+          image: ghcr.io/asleshapokhrel/fast-api:latest
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  name: deployment-hello-docker
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+  selector:
+    app: deployment-hello-docker
+
