@@ -7,7 +7,7 @@ curl -O https://dl.min.io/server/minio/release/linux-amd64/minio
 
 chmod +x minio
 
-./minio server /path_to_data```
+./minio server /path_to_data
 ```
 
 To access minio UI locally vsit `http://127.0.0.1:9000 (Username: minioadmin, Password: minioadmin`
