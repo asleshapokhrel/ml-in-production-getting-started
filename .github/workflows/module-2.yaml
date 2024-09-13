@@ -39,4 +39,4 @@ jobs:
 
       - name: Run test
         run: |   
-          pytest -ss ./module-2/minio_storage/test_minio_client.py
+          pytest -ss ./module-2/minio-pytthon-client/test_minio_client.py
